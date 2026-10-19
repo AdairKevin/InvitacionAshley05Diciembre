@@ -1,7 +1,7 @@
 .envelope-screen {
   position: fixed;
   inset: 0;
-  background-image: url("../assets/img/fondoSobre.jpg");
+  background-image: url("../assets/img/lila.jpg");
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(10px);
@@ -18,7 +18,7 @@
   height: 220px;
 
   border: 2px solid transparent;
-  background-image: url("../assets/img/sobre2.png");
+  background-image: url("../assets/img/sobre.png");
   background-size: cover;
   background-position: bottom;
   border-radius: 10px;
@@ -147,6 +147,10 @@
   mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
 }
 
+.home-img img {
+  filter: blur(8px);
+}
+
 .home-img {
   z-index: -1000;
   width: 100%;
@@ -168,9 +172,9 @@
 
 .titulo h1 {
   font-family: var(--font-titulos);
-  font-size: 3.9rem;
+  font-size: 4.5rem;
   text-align: center;
-  background: var(--gold-gradient);
+  background: var(--gold-gradient2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
@@ -178,13 +182,14 @@
 
 .titulo h2 {
   font-family: var(--font-subtitulos);
-  font-size: 4rem;
+  font-size: 4.5rem;
   text-align: center;
-  color: var(--rose);
+  color: var(--rose-light);
   font-weight: 400;
   letter-spacing: 5px;
   margin-top: -16px;
-  text-shadow: 0 5px 6px var(--rose-shadow);
+  text-shadow: 0 5px 4px rgb(0, 0, 0);
+  -webkit-text-stroke: #a87e00d4 1px;
 }
 
 /* -----------------------
@@ -192,6 +197,7 @@
   --------------------------*/
 .music-card {
   margin: 0 auto;
+  margin-bottom: 10%;
   background: var(--ivory-paper);
   color: var(--txt-body);
   padding: 2rem 1rem;
@@ -292,15 +298,15 @@
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 80px;
-  background-image: url("../assets/img/fondo-info2.png");
+  background-image: url("../assets/img/fondoPergamino.jpg");
   width: calc(100% - 10%);
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
   position: relative;
 
-  border: 2px solid var(--rose);
-  outline: 5px solid var(--rose-outline);
+  border: 2px solid #672600;
+  outline: 5px solid rgba(137, 70, 16, 0.815);
 
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
 }
@@ -308,14 +314,14 @@
 .section-info::after {
   content: "";
   position: absolute;
-  top: -140px;
+  top: -110px;
   left: 50%;
   transform: translateX(-50%);
 
-  width: 260px;
-  height: 280px;
+  width: 250px;
+  height: 200px;
 
-  background-image: url("../assets/img/flores2.png");
+  background-image: url("../assets/img/corona.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -333,7 +339,7 @@
   width: 260px;
   height: 280px;
 
-  background-image: url("../assets/img/d2fd1e5c11599e81b15746ea48d49838.png");
+  background-image: url("../assets/img/floreslilas.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -365,10 +371,9 @@
   align-items: center;
   gap: 4px;
   margin-bottom: 20px;
-  border-top: 3px solid var(--rose-main);
-  border-bottom: 3px solid var(--rose-main);
-  width: 106%;
+  width: 100%;
   padding: 10px;
+  margin-top: -20px;
 }
 
 .sub {
@@ -388,7 +393,9 @@
   color: var(--bg-color-4);
 }
 
-.info-primary p {
+.info-primary p,
+.frase-p p {
+  text-transform: uppercase;
   text-align: center;
   font-size: 1rem;
   margin-bottom: 10px;
@@ -396,22 +403,25 @@
   line-height: 1.5rem;
 }
 
-.padres {
+.padres,
+.padrinos h2 {
   margin: 0 auto;
   margin-top: -10px;
   text-align: center;
   line-height: 1.7rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
   font-family: var(--font-titulos);
 }
 
-.frase-p,
 .fecha {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
+  line-height: 1.5rem;
 }
 
 .frase-l h1 {
@@ -438,16 +448,17 @@
   margin: 0;
   font-weight: 400;
   letter-spacing: 5px;
-  margin-top: -10px;
+  margin-top: 20px;
 }
 
 .nombre h3 {
   font-family: var(--font-titulos);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: center;
   margin: 0;
   font-weight: 400;
   letter-spacing: 4px;
+  margin-top: -15px;
 }
 
 .padrinos p {
@@ -456,16 +467,7 @@
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.padrinos h2 {
-  margin: 0 auto;
-  text-align: center;
-  line-height: 1.7rem;
-  font-size: 1.2rem;
-  font-family: var(--font-titulos);
-  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .dia {
@@ -567,19 +569,19 @@
 .section-place-salon {
   width: calc(100% - 30px);
   margin: 0 auto;
+  z-index: -9999;
 }
 
 .section-place::after,
 .section-place-salon::after {
   content: "";
   position: absolute;
-  top: -120px; /* qué tan abajo sobresale */
+  top: -120px;
   left: 50%;
   transform: translateX(-50%) rotate(180deg); /* gira para simetría */
   width: 200px;
   height: 200px;
 
-  background-image: url("../assets/img/d2fd1e5c11599e81b15746ea48d49838.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -771,13 +773,13 @@
   --------------------------*/
 .section-message {
   position: relative;
-  background-image: url("../assets/img/fondoSobre.jpg");
+  background-image: url("../assets/img/torreback.jpg");
   background-position: center;
   background-size: cover;
   padding: 3rem 1rem 4rem;
   overflow: hidden;
 
-  margin-top: -50px;
+  margin-top: -60px;
 }
 
 .box-message {
@@ -982,4 +984,187 @@ footer a:hover {
 
 .palabras b {
   color: var(--rose);
+}
+
+.rapunzel {
+  position: absolute;
+  width: 90px;
+  opacity: 0.85;
+  filter: drop-shadow(0 0 15px rgba(255, 220, 150, 0.9));
+  z-index: 5;
+  width: 150px;
+  left: -45px;
+  top: 0px;
+  z-index: 1;
+}
+
+.social-section {
+  width: 90%;
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* detalle decorativo */
+
+.social-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 120px;
+  height: 1px;
+  background: #c9a44c;
+  transform: translateX(-50%);
+}
+
+.social-card {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 45px 35px;
+  background: var(--rose-light); /* suave variación de fondo */
+  border: 2px solid var(--rose-main); /* borde dorado principal */
+  position: relative;
+}
+
+/* esquinas estilo invitación antigua */
+
+.social-card::before {
+  top: 12px;
+  left: 12px;
+
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.social-card::after {
+  bottom: 12px;
+  right: 12px;
+
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+}
+
+.social-icon {
+  color: #c9a44c;
+  font-size: 30px;
+}
+
+.social-card h2 {
+  margin: 15px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: 500;
+  color: #47333f;
+}
+
+.social-card p {
+  font-family: "Montserrat", sans-serif;
+
+  color: #6e5b67;
+
+  line-height: 1.8;
+
+  font-size: 15px;
+}
+
+.instagram-user {
+  margin: 25px auto;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 22px;
+
+  color: #b08b32;
+
+  letter-spacing: 1px;
+}
+
+.social-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 13px 30px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 14px;
+
+  color: white;
+
+  background: linear-gradient(120deg, #c9a44c, #a57c2c);
+
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  transform: translateY(-3px);
+}
+
+/* -----------------------
+   CONFIRMACIÓN POR WHATSAPP
+--------------------------*/
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: calc(100% - 40px);
+  max-width: 380px;
+  margin: 1.5rem auto 0;
+  padding: 1.6rem 1.2rem;
+  background: var(--ivory-paper);
+  border: 2px solid var(--gold-elegant);
+  outline: 4px solid rgba(201, 164, 76, 0.25);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.rsvp-form h3 {
+  margin: 0 0 4px;
+  font-family: var(--font-subtitulos);
+  font-weight: 400;
+  font-size: 2.1rem;
+  color: var(--rose);
+  text-align: center;
+}
+
+.rsvp-form input,
+.rsvp-form textarea {
+  font-family: var(--font-texto);
+  font-size: 1rem;
+  padding: 12px 14px;
+  border: 1px solid var(--rose-main);
+  background: #fff;
+  color: #3a3a3a;
+  resize: vertical;
+}
+
+.rsvp-form input:focus,
+.rsvp-form textarea:focus {
+  outline: 2px solid var(--gold-elegant);
+}
+
+.rsvp-btn {
+  margin-top: 4px;
+  padding: 14px;
+  border: none;
+  background: var(--gold-gradient);
+  color: #3a2a0a;
+  font-family: var(--font-titulos);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
 }

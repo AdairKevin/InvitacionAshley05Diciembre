@@ -5,16 +5,23 @@
 
 :root {
   --gold-gradient: linear-gradient(120deg, #f6e27a, #c9a44c, #a57c2c, #f6e27a);
-  --rose: #7e57a8;
-  --rose-main: #c3a6e0;
-  --rose-light: #f1e9f9;
-  --rose-shadow: rgb(179, 146, 214);
-  --rose-outline: rgba(155, 115, 200, 0.25);
+  --gold-gradient2: linear-gradient(
+    180deg,
+    #fff3a3,
+    #ffd700,
+    #d4af37,
+    #c1921b,
+    #ffd700,
+    #fff3a3
+  );
+  --rose: #9d70a0;
+  --rose-main: #c9a3c7;
+  --rose-light: #f2e6e7;
   --gold-elegant: #c9a44c;
   --gray-pearl: #8f8a86;
   --ivory-paper: #f7f3eb;
 
-  --bg-section-light: #fffaec;
+  --bg-section-light: #f6f6f6;
   --bg-section-dark: #2c2c2c;
 
   --bg-gradient: linear-gradient(

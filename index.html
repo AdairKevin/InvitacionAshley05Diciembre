@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/variables.css" />
   </head>
 
-  <body class="center">
+  <body class="center" translate="no">
     <!-- SOBRE DE BIENVENIDA -->
     <div class="envelope-screen" id="envelopeScreen">
       <div class="envelope">
@@ -22,22 +22,24 @@
     </div>
 
     <div class="invitation-content hidden" id="invitationContent">
+      <!-- TODO tu contenido actual -->
+
       <div class="content">
         <section class="section-home">
           <div class="home-content">
-            <!-- PENDIENTE: foto de portada -->
-            <img class="home-img" alt="photo" src="./assets/img/1 (1).png" />
+            <img class="home-img" alt="photo" src="./assets/img/Fondo.png" />
             <div class="titulo">
               <h1>Mis XV</h1>
-              <h2>Ashley</h2>
+              <h2>Ashley Danae</h2>
             </div>
           </div>
         </section>
 
         <section class="musica">
           <div class="music-card">
-            <!-- PENDIENTE: imagen del álbum (assets/img/kali.webp) -->
-            <div class="album-art"></div>
+            <img class="rapunzel" src="./assets/img/rapunzel.png" alt="" />
+
+            <!-- <div class="album-art"></div> -->
             <div class="song-title">Quinceañera</div>
             <div class="artist-name">Timbiriche</div>
 
@@ -47,16 +49,17 @@
               <div class="progress" id="progressBar"></div>
             </div>
 
-            <!-- PENDIENTE: mp3 de "Quinceañera" - Timbiriche -->
             <audio
               id="audioPlayer"
-              src="./assets/music/Kali Uchis - All I Can Say.mp3"
+              src="./assets/music/Chayanne, Danna Paola - Veo en ti la luz (De EnredadosVideo Oficial).mp3"
             ></audio>
+            <!-- PENDIENTE: mp3 de "Quinceañera" - Timbiriche (sigue el de Atziri) -->
           </div>
         </section>
 
+        <!-- PENDIENTE: fotos de Ashley (siguen las de Atziri) -->
         <div class="img-separador">
-          <img src="./assets/img/portada1.jpg" alt="separador" />
+          <img class="foto1" src="./assets/img/Foto1lila.png" alt="separador" />
         </div>
 
         <div class="palabras">
@@ -75,52 +78,59 @@
             <span></span>
             <span></span>
           </div>
+
           <div class="box-info">
             <div class="info-primary">
               <div class="sociedad">
-                <img style="width: 80px" src="./assets/img/icon.png" alt="" />
-                <h1>Lady Whistledown's</h1>
-                <h2 class="sub">SOCIETY PAPERS</h2>
+                <img style="width: 150px" src="./assets/img/sol.png" alt="" />
+                <h1 translate="no">Royal Kingdom</h1>
+                <h2 class="sub" translate="no">THE CORONA CHRONICLES</h2>
               </div>
 
               <p>
-                QUERIDOS LECTORES <br />
-                SI LOS RUMORES SON CIERTOS, <br />
-                EN POCOS DIAS
+                APRECIABLES FAMILIARES Y AMIGOS <br />
+                CON GRAN ALEGRÍA Y EL CORAZÓN LLENO DE ILUSIÓN DESEAMOS
+                COMPARTIR CON USTEDES UNA NOCHE MÁGICA
               </p>
             </div>
 
             <div class="padres">
               <ul>
-                <li>Lady María Tehuitzil y</li>
-                <li>Lord Alfredo Betanzos</li>
+                <li>María Tehuitzil</li>
+                <li>Alfredo Betanzos</li>
               </ul>
             </div>
 
             <div class="frase-p">
               <p>
-                no escatimarán en gastos en lo que promete será una celebración
-                que dará mucho de que hablar
+                tienen el honor de invitarles a formar parte de una velada
+                encantada, donde celebraremos la llegada de un nuevo capítulo
+                lleno de sueños, luz y momentos inolvidables junto a nuestros
+                seres más queridos.
               </p>
             </div>
 
             <div class="frase-l">
-              <h1>Las quince primaveras</h1>
-              <p>de su adorada hija</p>
+              <h1>
+                Con motivo de los XV años <br />
+                de su amada hija
+              </h1>
             </div>
 
             <div class="nombre">
-              <h2>Ashley</h2>
-              <h3>Danae</h3>
+              <h2>Ashley Danae</h2>
+              <h3>Betanzos Tehuitzil</h3>
             </div>
 
             <div class="padrinos">
-              <p>Junto a su madrina</p>
-              <h2>Lady Patricia García Martínez</h2>
+              <p>Acompañada por su madrina</p>
+              <h2>Patricia García Martínez</h2>
             </div>
 
-            <div class="fecha">
-              <p>la majestuosa celebración se realizará el día</p>
+            <div class="fecha" translate="no">
+              <p>
+                tendrán el placer de recibirles en una noche de ensueño el día
+              </p>
             </div>
 
             <div class="date-box">
@@ -154,7 +164,8 @@
         </div>
 
         <div class="img-separador">
-          <img src="./assets/img/portada1.jpg" alt="separador" />
+          <!-- PENDIENTE: foto de Ashley -->
+          <img src="./assets/img/Foto3lila.png" alt="separador" />
         </div>
 
         <section class="section-place">
@@ -207,9 +218,32 @@
           </div>
         </section>
 
-        <div class="img-separador">
-          <img src="./assets/img/portada1.jpg" alt="separador" />
+        <!--  <div class="img-separador">
+          <img
+            src="./assets/img/WhatsApp Image 2026-07-22 at 7.40.02 PM.jpeg"
+            alt="separador"
+          />
         </div>
+        -->
+        <!-- Sección de Instagram del modelo: oculta porque Ashley no envió usuario
+        <section class="social-section">
+          <div class="social-card">
+            <span class="social-icon"> ✦ </span>
+            <h2>Captura el momento</h2>
+            <p>
+              Comparte los recuerdos más mágicos de esta noche. Etiqueta a la
+              quinceañera y forma parte de esta historia inolvidable.
+            </p>
+            <div class="instagram-user">@usuario</div>
+            <button class="confirmar">
+              <a href="https://www.instagram.com/usuario/" class="">
+                <i class="bi bi-instagram"></i>
+                Etiquetar en Instagram
+              </a>
+            </button>
+          </div>
+        </section>
+        -->
 
         <section class="section-galeria">
           <section class="section-info-adicional">
@@ -217,7 +251,9 @@
               <img height="70" src="./assets/icons/Clothes.svg" alt="clothes" />
               <h2>Vestimenta</h2>
               <p>
-                Vestimenta libre. El color lila ha sido reservado para la
+                El código de vestimenta es libre; siéntete cómodo de lucir como
+                mejor te sientas para disfrutar de esta noche mágica. Con cariño
+                te recordamos que el color lila ha sido reservado para la
                 quinceañera.
               </p>
             </div>
@@ -238,8 +274,9 @@
               />
               <h2>Mesa de regalos</h2>
               <p>
-                Su presencia es el regalo más importante; lo que gusten regalar
-                se acepta con amor y cariño.
+                Su presencia es el regalo más valioso que podemos recibir en
+                esta noche tan especial. Si desean tener un detalle con la
+                quinceañera, será recibido con todo nuestro amor y cariño.
               </p>
             </div>
           </section>
@@ -252,10 +289,28 @@
               merecen ser compartidos
             </p>
             <b>¡Gracias por acompañarnos!</b>
-            <!-- PENDIENTE: link de confirmación -->
-            <button class="confirmar">
-              <a href=""> Confirmar asistencia </a>
-            </button>
+            <!-- PENDIENTE: el número que mandaron (55 1537 152) tiene 9 dígitos; falta uno -->
+            <form
+              class="rsvp-form"
+              data-whatsapp="52551537152"
+              data-evento="los XV años de Ashley Danae"
+            >
+              <h3>Confirma tu asistencia</h3>
+              <input name="nombre" type="text" placeholder="Nombre completo" required />
+              <input
+                name="personas"
+                type="number"
+                min="1"
+                placeholder="Número de asistentes"
+                required
+              />
+              <textarea
+                name="mensaje"
+                rows="3"
+                placeholder="Deja un mensaje para la quinceañera (opcional)"
+              ></textarea>
+              <button type="submit" class="rsvp-btn">Confirmar por WhatsApp</button>
+            </form>
           </div>
         </section>
 
